@@ -24,3 +24,12 @@ function mytheme_register_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'mytheme_register_scripts');
+
+
+function mytheme_theme_support()
+{
+    // Adds dynamic title tag support
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'mytheme_theme_support');
