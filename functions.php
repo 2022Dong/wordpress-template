@@ -54,10 +54,10 @@ function mytheme_widget_areas()
 {
     register_sidebar(
         array(
-            'before_title' => '<h2>',
-            'after_title' => '</h2>',
-            'before_widget' => '',
-            'after_widget' => ''
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+            'after_widget' => '</ul>'
         ),
         array(
             'name' => 'Sidebar Area',
