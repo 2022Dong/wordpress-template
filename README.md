@@ -1,0 +1,1 @@
+![mytheme](/wp-content/themes/mytheme/assets/images/Screenshot 2024-04-14.png)
