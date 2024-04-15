@@ -78,3 +78,10 @@ function mytheme_widget_areas()
 }
 
 add_action('widgets_init', 'mytheme_widget_areas');
+
+function add_favicon()
+{
+    echo '<link rel="shortcut icon" href=" ' . get_template_directory_uri() . '/assets/images/logo.ico">';
+}
+
+add_action('wp_head', 'add_favicon');
