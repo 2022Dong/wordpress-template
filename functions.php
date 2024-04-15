@@ -85,3 +85,21 @@ function add_favicon()
 }
 
 add_action('wp_head', 'add_favicon');
+
+// Remove junk from head
+remove_action('wp-head', '_wp_render_title_tag', 1);
+remove_action('wp-head', 'wp_resource_hints', 2);
+remove_action('wp-head', 'feed_links', 2);
+remove_action('wp-head', 'feed_links_extra', 3);
+remove_action('wp-head', 'rsd_link');
+remove_action('wp-head', 'wlwmanifest_link');
+remove_action('wp-head', 'locale_stylesheet');
+remove_action('publish_future_post', 'check_and_publish_future_post', 10, 1);
+remove_action('wp-head', 'wp_robots', 1);
+remove_action('wp-head', 'print_emoji_detection_script', 7);
+remove_action('wp-head', 'wp_print_head_scripts', 9);
+remove_action('wp-head', 'wp_print_styles', 8);
+remove_action('wp-head', 'wp_generator');
+remove_action('wp-head', 'wp_shortlink_wp_head', 10, 0);
+remove_action('wp-head', 'wp_custom_css_cb', 101);
+remove_action('wp-head', 'wp_site_icon', 99);
